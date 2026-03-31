@@ -41,7 +41,21 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={outfit.variable}>
+    <html lang={locale} className={outfit.variable} suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+             __html: `
+              (function() {
+                try {
+                  var theme = localStorage.getItem('app-theme') || 'dark';
+                  document.documentElement.setAttribute('data-theme', theme);
+                } catch (e) {}
+              })();
+            `
+          }}
+        />
+      </head>
       <body className="antialiased">
         <NextIntlClientProvider messages={messages}>
           <Navbar locale={locale} />
