@@ -36,5 +36,27 @@
         "date": "March 10, 2026"
       }
     }
+  },
+  "Home": {
+    "statsTitle": "Trusted by developers worldwide",
+    "stat1": "Users",
+    "stat2": "Projects",
+    "stat3": "Uptime",
+    "stat4": "Countries",
+    "techLabel": "Built with the best technologies",
+    "testimonialsTitle": "What people are saying",
+    "testimonialsSubtitle": "Join thousands of developers who are already building amazing things.",
+    "t1text": "This is hands-down the most beautiful starter I've used. The i18n setup is flawless!",
+    "t1name": "Alex Chen",
+    "t1role": "Senior Frontend Engineer",
+    "t2text": "I was blown away by how fast I could get a production-ready, multilingual site running.",
+    "t2name": "Priya Nair",
+    "t2role": "Indie Developer",
+    "t3text": "The Glassmorphism design and the particle animation are absolutely stunning. 10/10.",
+    "t3name": "Marcus Weber",
+    "t3role": "UI/UX Designer",
+    "ctaTitle": "Ready to build something amazing?",
+    "ctaDesc": "Start your journey today. No credit card required.",
+    "ctaButton": "Get Started Free"
   }
 }

@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import Script from "next/script";
 import Navbar from "@/components/Navbar";
+import ScrollReveal from "@/components/ScrollReveal";
 
 import "../css/globals.css";
 
@@ -53,6 +54,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <Navbar locale={locale} />
           {children}
+          <ScrollReveal />
         </NextIntlClientProvider>
       </body>
     </html>
