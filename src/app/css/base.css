@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-outfit), sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  line-height: 1.6;
+}
+
+/* Background blob animations */
+.bg-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  z-index: -1;
+  animation: float 10s infinite ease-in-out alternate;
+}
+.blob-1 {
+  width: 400px;
+  height: 400px;
+  background: rgba(59, 130, 246, 0.3);
+  top: -100px;
+  left: -100px;
+}
+.blob-2 {
+  width: 500px;
+  height: 500px;
+  background: rgba(139, 92, 246, 0.3);
+  bottom: -200px;
+  right: -100px;
+  animation-delay: -5s;
+}
+
+@keyframes float {
+  0% { transform: translateY(0) scale(1); }
+  100% { transform: translateY(30px) scale(1.1); }
+}

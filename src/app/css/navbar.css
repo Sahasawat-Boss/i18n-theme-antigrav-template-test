@@ -1,0 +1,60 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--glass-border);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  background: linear-gradient(to right, var(--accent-primary), var(--accent-secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-link {
+  color: var(--text-main);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: var(--accent-primary);
+}
+
+.lang-switcher button {
+  background: none;
+  border: 1px solid var(--glass-border);
+  color: var(--text-main);
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  font-weight: 600;
+}
+.lang-switcher button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--text-main);
+}
+.lang-switcher button.active {
+  background: var(--text-main);
+  color: var(--bg-color);
+}

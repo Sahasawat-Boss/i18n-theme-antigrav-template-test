@@ -5,7 +5,7 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 
-import "../globals.css";
+import "../css/globals.css";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 };
 
 export function generateStaticParams() {
-  return routing.locales.map((locale) => ({locale}));
+  return routing.locales.map((locale) => ({ locale }));
 }
 
 import Navbar from "@/components/Navbar";
@@ -31,11 +31,11 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>;
 }>) {
   const { locale } = await params;
-  
+
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
-  
+
   setRequestLocale(locale);
 
   const messages = await getMessages();
@@ -45,7 +45,7 @@ export default async function LocaleLayout({
       <head>
         <script
           dangerouslySetInnerHTML={{
-             __html: `
+            __html: `
               (function() {
                 try {
                   var theme = localStorage.getItem('app-theme') || 'dark';

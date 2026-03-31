@@ -1,0 +1,43 @@
+:root, :root[data-theme="dark"] {
+  --bg-color: #0f172a;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --accent-primary: #3b82f6;
+  --accent-secondary: #8b5cf6;
+  --button-text: #ffffff;
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+:root[data-theme="emerald"] {
+  --bg-color: #022c22;
+  --text-main: #f0fdf4;
+  --text-muted: #a7f3d0;
+  --accent-primary: #10b981;
+  --accent-secondary: #059669;
+  --button-text: #ffffff;
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+:root[data-theme="sunset"] {
+  --bg-color: #431407;
+  --text-main: #fff7ed;
+  --text-muted: #ffedd5;
+  --accent-primary: #f97316;
+  --accent-secondary: #e11d48;
+  --button-text: #ffffff;
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+:root[data-theme="light"] {
+  --bg-color: #f8fafc;
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --accent-primary: #2563eb;
+  --accent-secondary: #7c3aed;
+  --button-text: #ffffff;
+  --glass-bg: rgba(0, 0, 0, 0.05);
+  --glass-border: rgba(0, 0, 0, 0.1);
+}
